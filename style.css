@@ -1,0 +1,96 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding:0;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto/Roboto-Light.ttf') format('opentype');
+}
+:root{
+    --cor: rgb(19, 202, 227);
+    --cor1: rgb(35, 35, 35);
+    --cor2: rgb(78, 78, 78);
+    --cor3: rgb(126, 126, 126);
+}
+body{
+    background-color: var(--cor3);
+}
+main{
+    display: flex;
+    font-family: 'Roboto';
+    color: white; 
+}
+.tela{
+    background-color: white;
+    color: black;
+    height: 160px;
+    width: 330px;
+    margin: auto;
+    border-radius: 5px 5px 0px 0px ;
+}
+#principal{
+    margin: auto;
+    display: flex;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.324);
+}
+/*Primeira coluna*/
+.sec1{
+    background-color: var(--cor1);
+    padding: 4px;
+}
+.sec1 article{
+    display: flex; 
+}
+.sec1 article div{
+    font-size: 25px;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 5px;
+}
+.art11 div, .art12 div, .art13 div{
+    padding: 20px 25px;
+}
+.zero,.igual{
+    padding: 20px 25px;
+}
+.ponto{
+    padding: 15px 29px;
+}
+/* Segunda coluna */
+.sec2 {
+    background-color: var(--cor2);
+    width: 50px;
+}
+.art21 div{
+    background-color: blue;
+    margin: 25px 2px;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.art22 div{
+    font-size: 20px;
+    background-color: blue;
+    margin:15px 2px 10px 2px;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+/* Terceira coluna */
+.sec3 {
+    background-color: var(--cor);
+    padding: 20px 10px;
+}
+.sec3 div{
+    background-color: var(--cor);
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+/*Efeitos*/
+article div:hover, div:hover{
+    cursor: pointer;
+}
+article div:active, div:active{
+    background-color: white;
+    color: black;
+}
